@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, responsive starter webpage.">
+  <title>Welcome</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f4f7fb;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #667085;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 32rem),
+        var(--background);
+    }
+
+    main {
+      width: min(680px, 100%);
+      padding: clamp(32px, 8vw, 64px);
+      text-align: center;
+      background: var(--surface);
+      border: 1px solid rgba(23, 32, 51, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(23, 32, 51, 0.10);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--primary);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 8vw, 4.25rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      max-width: 520px;
+      margin: 20px auto 28px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      color: #ffffff;
+      font-weight: 700;
+      text-decoration: none;
+      background: var(--primary);
+      border-radius: 10px;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.35);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Welcome</p>
+    <h1>Hello, world.</h1>
+    <p class="intro">
+      This is a clean, responsive starter page ready for your content,
+      styles, and next great idea.
+    </p>
+    <a class="button" href="#learn-more">Get started</a>
+</h> Vesion 2.0.0 </h>
+  </main>
+</body>
+</html>
